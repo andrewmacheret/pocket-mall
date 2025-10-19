@@ -1,0 +1,50 @@
+<svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Functional gear with connected teeth -->
+  <g fill="#333333">
+    <!-- Create gear by starting with circle and adding rectangular teeth -->
+    <circle cx="32" cy="32" r="22"/>
+    
+    <!-- 12 gear teeth positioned around the circle -->
+    <!-- Top -->
+    <rect x="30" y="6" width="4" height="6"/>
+    <!-- Top-right -->
+    <rect x="42" y="8" width="6" height="4" transform="rotate(30 45 10)"/>
+    <rect x="50" y="16" width="6" height="4" transform="rotate(60 53 18)"/>
+    <!-- Right -->
+    <rect x="54" y="30" width="6" height="4"/>
+    <!-- Bottom-right -->
+    <rect x="50" y="44" width="6" height="4" transform="rotate(-60 53 46)"/>
+    <rect x="42" y="52" width="6" height="4" transform="rotate(-30 45 54)"/>
+    <!-- Bottom -->
+    <rect x="30" y="54" width="4" height="6"/>
+    <!-- Bottom-left -->
+    <rect x="16" y="52" width="6" height="4" transform="rotate(30 19 54)"/>
+    <rect x="8" y="44" width="6" height="4" transform="rotate(60 11 46)"/>
+    <!-- Left -->
+    <rect x="4" y="30" width="6" height="4"/>
+    <!-- Top-left -->
+    <rect x="8" y="16" width="6" height="4" transform="rotate(-60 11 18)"/>
+    <rect x="16" y="8" width="6" height="4" transform="rotate(-30 19 10)"/>
+  </g>
+  
+  <!-- Inner white circle -->
+  <circle cx="32" cy="32" r="18" fill="#ffffff"/>
+  
+  <!-- Recycling symbol - three curved arrows forming a circle -->
+  <g fill="#333333" stroke="#333333" stroke-width="1.5" stroke-linecap="round">
+    <!-- Arrow 1 (top) -->
+    <path d="M32 22 A6 6 0 0 1 42 28" fill="none"/>
+    <polygon points="40,26 44,28 40,30"/>
+    
+    <!-- Arrow 2 (bottom-right) -->
+    <path d="M42 36 A6 6 0 0 1 32 42" fill="none"/>
+    <polygon points="34,40 32,44 30,40"/>
+    
+    <!-- Arrow 3 (bottom-left) -->
+    <path d="M22 36 A6 6 0 0 1 22 28" fill="none"/>
+    <polygon points="24,30 20,28 24,26"/>
+  </g>
+  
+  <!-- Central hole (typical in real gears) -->
+  <circle cx="32" cy="32" r="6" fill="#333333"/>
+</svg>

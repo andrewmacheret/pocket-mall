@@ -1,0 +1,446 @@
+{
+  "blueprint": {
+    "icons": [
+      {
+        "signal": {
+          "name": "decider-combinator"
+        },
+        "index": 1
+      },
+      {
+        "signal": {
+          "name": "constant-combinator"
+        },
+        "index": 2
+      }
+    ],
+    "entities": [
+      {
+        "entity_number": 1,
+        "name": "constant-combinator",
+        "position": {
+          "x": -185.5,
+          "y": 425.5
+        },
+        "direction": 12,
+        "control_behavior": {
+          "sections": {
+            "sections": [
+              {
+                "index": 1,
+                "filters": [
+                  {
+                    "index": 1,
+                    "name": "pipe",
+                    "quality": "normal",
+                    "comparator": "=",
+                    "count": 1
+                  },
+                  {
+                    "index": 2,
+                    "name": "iron-gear-wheel",
+                    "quality": "normal",
+                    "comparator": "=",
+                    "count": 3
+                  },
+                  {
+                    "index": 3,
+                    "name": "engine-unit",
+                    "quality": "normal",
+                    "comparator": "=",
+                    "count": 5
+                  },
+                  {
+                    "index": 4,
+                    "name": "car",
+                    "quality": "normal",
+                    "comparator": "=",
+                    "count": 7
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "entity_number": 2,
+        "name": "decider-combinator",
+        "position": {
+          "x": -185.5,
+          "y": 424
+        },
+        "control_behavior": {
+          "decider_conditions": {
+            "conditions": [
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 1,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-no-entry"
+                },
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "iron-plate"
+                },
+                "constant": 64,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "pipe"
+                },
+                "constant": 64,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 2,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "name": "pipe"
+                },
+                "constant": 64,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 3,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-no-entry"
+                },
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "iron-plate"
+                },
+                "constant": 64,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "iron-gear-wheel"
+                },
+                "constant": 32,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 4,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "name": "iron-gear-wheel"
+                },
+                "constant": 32,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 5,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-no-entry"
+                },
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "steel-plate"
+                },
+                "constant": 32,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "iron-gear-wheel"
+                },
+                "constant": 32,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "pipe"
+                },
+                "constant": 64,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "engine-unit"
+                },
+                "constant": 32,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 6,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "name": "engine-unit"
+                },
+                "constant": 32,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 7,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-no-entry"
+                },
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "iron-plate"
+                },
+                "constant": 80,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "steel-plate"
+                },
+                "constant": 20,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "engine-unit"
+                },
+                "constant": 32,
+                "comparator": "≥",
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "name": "car"
+                },
+                "constant": 4,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              },
+              {
+                "first_signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "constant": 8,
+                "comparator": "=",
+                "first_signal_networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "first_signal": {
+                  "name": "car"
+                },
+                "constant": 4,
+                "first_signal_networks": {
+                  "red": false,
+                  "green": true
+                },
+                "compare_type": "and"
+              }
+            ],
+            "outputs": [
+              {
+                "signal": {
+                  "type": "virtual",
+                  "name": "signal-each"
+                },
+                "copy_count_from_input": false,
+                "networks": {
+                  "red": true,
+                  "green": false
+                }
+              },
+              {
+                "signal": {
+                  "type": "virtual",
+                  "name": "signal-no-entry"
+                },
+                "copy_count_from_input": false
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "wires": [
+      [
+        1,
+        1,
+        2,
+        1
+      ],
+      [
+        2,
+        1,
+        2,
+        3
+      ]
+    ],
+    "item": "blueprint",
+    "version": 562949957943296
+  }
+}
