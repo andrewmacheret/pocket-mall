@@ -6,8 +6,6 @@ A web application for generating Factorio blueprints for ultra-compact auto mall
 
 Upload a recipe JSON file from [Factorio Lab](https://factoriolab.github.io/), specify your production goals, and generate optimized blueprints for your factory automation needs.
 
-See it in action at https://andrewmacheret.com/projects/pocketmall
-
 ## Development
 
 ### Prerequisites
